@@ -1,0 +1,35 @@
+<article class="{{block_prefix}}card  {{block_mod}}">
+	<div class="{{block_prefix}}row row  is--wrap  is--gutter  {{block_mod}}">
+		<div class="{{block_prefix}}cols cols  {{block_mod}}  is--preview">
+			<a href="{{block_preview_fancy}}" data-fancybox="{{block_fancy}}" class="{{block_prefix}}preview  {{block_mod}}">
+				<img src="{{block_preview}}" alt="{{block_heading}}">
+			</a>
+		</div>
+		<div class="{{block_prefix}}cols cols  {{block_mod}}  is--desc">
+			<div class="{{block_prefix}}desc  {{block_mod}}">
+				<time class="{{block_prefix}}date  {{block_mod}}" datetime="{{block_date_iso}}">{{block_date}}</time>	
+				<div class="{{block_prefix}}note  text__block  {{block_mod}}">{{block_note}}</div>	
+				<div class="{{block_prefix}}btn  {{block_mod}}">
+					<h6>Вариант для прошедшего события</h6>
+					[[azbntple 
+						tpl="/src/block/site/default/button/link.html"
+						button_prefix="btn__" 
+						button_mod="is--invers"
+						button_link="{{page.event}}"
+						button_name="Другие событие" 
+					]]
+				</div>
+				<div class="{{block_prefix}}btn  {{block_mod}}">
+					<h6>Вариант для предстоящего события</h6>
+					[[azbntple 
+						tpl="/src/block/site/default/button/btn-modal.html"
+						button_prefix="btn__" 
+						button_mod="is--invers"
+						button_target="modal-reserv"
+						button_name="Забронировать столик" 
+					]]
+				</div>
+			</div>
+		</div>
+	</div>
+</article>
