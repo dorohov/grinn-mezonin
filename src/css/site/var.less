@@ -19,7 +19,7 @@
 @black-32: 			#324350;
 @black-27: 			lighten(@black, 15.3%); 	//#272727
 @black-61: 			lighten(@black, 38%); 		//#616161
-@green:				#409999;
+
 @green-light:		#AAC72D;
 @green-dark:		#009948;
 @orange:			#DF8600;
@@ -33,16 +33,16 @@
 @black-af: 			#AFA59C;
 @white-f5:			#F5EAE4;
 @white-e9:			#E9E7E0;
-@green:				#C6D088;
 
 @black: 			#000;
 @black-21: 			#212431;
 @black-51: 			#513838;
+@black-92: 			#927360;
 @white:				#fff;
 @white-e4:			#E4CEB0;
 @red:				#E91044;
 @yellow:			#B18F62;
-
+@green:				#0e6740;
 
 @color-vk: 			#4d7198;
 @color-youtube: 	#bb0000;
@@ -72,9 +72,9 @@
 //===== base =====//
 @b-width:						1515px;
 @b-color:						@black-51; 
-@b-color-a:						@red; 
+@b-color-a:						@green; 
 @b-color-a-hover:				@yellow; 
-@b-color-h:						@black-21; 
+@b-color-h:						@black-51; 
 //@b-color-invers:				@white; 
 //@b-color-invers-h:			@orange;
 @b-html-bg:						@white; 
@@ -110,10 +110,10 @@
 @navbar-lh:						@b-lh;  
 @navbar-color-link:				@b-color-h;
 @navbar-color:					@b-color-h;
-@navbar-color-hover:			@b-color-h;
+@navbar-color-hover:			@white;
 @navbar-color-tel:				@b-color-a;
-@navbar-active-bg:				fadeout(@b-color-a, 80%);
-@navbar-active-color:			@b-color-a;
+@navbar-active-bg:				fadeout(@black-92, 0%);
+@navbar-active-color:			@white;
 @navbar-btn:					@b-color-h;
 @navbar-btn-hover:				@b-color-h;
 
@@ -149,8 +149,8 @@
 @navbar-bottom:					54px;
 @navbar-bottom-tabs:			64px;
 //===== footer =====//
-@footer-color:					@yellow; 
-@footer-color-hover:			@yellow; 
+@footer-color:					@black-51; 
+@footer-color-hover:			@black-51; 
 @footer-bg:						@white;
 @footer-ff:						@b-ff; 
 @footer-fs:						@b-fs; 
@@ -172,7 +172,7 @@
 //===== pagination =====//
 @pagin-gutter: 					2px;
 @pagin-color: 					@b-color;
-@pagin-color-hover: 			@b-color-h;
+@pagin-color-hover: 			@white;
 @pagin-color-h: 				@b-color-a;
 @pagin-bg-hover: 				fadeout(@b-color-a, 80%);
 @pagin-bg: 						@b-color-a;
